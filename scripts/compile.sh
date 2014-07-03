@@ -59,11 +59,9 @@ echo "Downloading $pcre_tarball_url"
 
 # Create compressed tarballs to make downloading easy.
 cd /tmp
-echo "Built for use on Heroku with the nginx buildpack." > README.txt
-echo "https://github.com/Prajjwal/nginx-buildpack-heroku.git" >> README.txt
-tar cfa heroku-nginx-full.tar.gz nginx/ README.txt
+tar cfa heroku-nginx-full.tar.gz nginx/
 cd /tmp/nginx/sbin/
-tar cfa /tmp/heroku-nginx.tar.gz nginx ../conf/mime.types ../../README.txt
+tar cfa /tmp/heroku-nginx.tar.gz nginx ../conf/mime.types
 
 # Make sure the script does not exit, causing the app to crash before you get a
 # chance to download your heroku-nginx.tar.gz.
