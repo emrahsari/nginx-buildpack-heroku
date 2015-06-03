@@ -23,7 +23,7 @@
 #
 # Check the "Building your binary" section in the README for more information.
 
-NGINX_VERSION=1.7.3
+NGINX_VERSION=1.7.0
 PCRE_VERSION=8.35
 
 # Set custom NGINX_VERSION & PCRE_VERSION if passed in as parameters.
