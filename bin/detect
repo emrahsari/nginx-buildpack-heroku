@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This pack requires your app to have an nginx.conf.erb at conf/
 
