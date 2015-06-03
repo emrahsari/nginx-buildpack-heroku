@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# bin/detect <build-dir>
 
 # This pack requires your app to have an nginx.conf.erb at conf/
 
