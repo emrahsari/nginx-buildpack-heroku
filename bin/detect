@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
-# bin/detect <build-dir>
-echo 'nginx-buildpack'
-exit 0
+#!/bin/bash
+
+# This pack requires your app to have an nginx.conf.erb at conf/
+
+[ -f "$1/conf/nginx.conf.erb" ] && exit 0
+
+echo "Could not find conf/nginx.conf.erb, build cannot continue."
+exit 1
