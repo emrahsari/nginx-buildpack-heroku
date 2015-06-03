@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
-# bin/detect <build-dir>
+#!/bin/sh
 
-if [ -f "$1/conf/nginx.conf.erb" ] then
-	echo "nginx" && exit 0
+if [ -f $1/conf/nginx.conf.erb ]; then
+  echo "Nginx"
+  exit 0
 else
-	echo "Could not find conf/nginx.conf.erb, build cannot continue." && exit 1
+  exit 1
 fi
